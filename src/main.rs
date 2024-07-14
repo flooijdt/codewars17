@@ -14,8 +14,7 @@ fn largest_difference(data: &[i32]) /*-> usize */
             if i <= j {
                 println!(
                     "{:?}",
-                    data.iter().position(|&j| true).unwrap()
-                        - data.iter().position(|&i| true).unwrap()
+                    data.iter().count() - data.iter().position(|&i| true).unwrap()
                 );
             }
         }
