@@ -1,10 +1,4 @@
-fn make_looper(string: &str) -> impl FnMut() -> char + '_ {
-    fn string.into() -> &str {
-        string.chars().next()
-    }
-}
-
-fn main(){
-    let mut abc = make_looper("abc");
-    println!("{:?}", abc());
+// Summary: Write a function which takes an array data of numbers and returns the largest difference in indexes j - i such that data[i] <= data[j]
+fn largest_difference(data: &[i32]) -> usize {
+    todo!()
 }
