@@ -10,7 +10,7 @@ fn largest_difference(data: &[i32]) /*-> usize */
     for (i, item) in data.iter().enumerate() {
         for (j, aitem) in data.iter().enumerate() {
             if item <= aitem {
-                println!("{:?}", data[j] - data[i]);
+                println!("{:?}", j - i);
             }
         }
     }
