@@ -7,22 +7,12 @@ fn main() {
 
 fn largest_difference(data: &[i32]) /*-> usize */
 {
-    let mut dif: i32 = 0;
-
-    let mut counter1 = 0;
-    let mut counter2 = 0;
-
     for (i, item) in data.iter().enumerate() {
         for (j, aitem) in data.iter().enumerate() {
-            if i <= j {
-                println!(
-                    "{:?}",
-                    data.iter().count() - data.iter().position(|&i| true).unwrap()
-                );
+            if item <= aitem {
+                println!("{:?}", data[j] - data[i]);
             }
-            counter1 += 1;
         }
         println!("{:?}", &i);
-        counter2 += 1;
     }
 }
