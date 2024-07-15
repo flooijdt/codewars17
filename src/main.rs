@@ -13,6 +13,5 @@ fn largest_difference(data: &[i32]) /*-> usize */
                 println!("{:?}", data[j] - data[i]);
             }
         }
-        println!("{:?}", &i);
     }
 }
